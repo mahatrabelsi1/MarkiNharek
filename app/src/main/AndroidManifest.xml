@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.habittracker">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_notification"
+
+        android:label="@string/Marki_Nharek"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+
+        <!-- Other activities -->
+        <activity android:name=".FirstPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainActivity" />
+        <receiver android:name=".NotificationReceiver" />
+        <activity android:name=".SleepActivity" />
+        <activity android:name=".ExerciseActivity" />
+        <activity android:name=".StudyActivity" />
+        <activity android:name=".WaterActivity" />
+        <activity android:name=".SummaryActivity" />
+        <!-- Add the missing activity -->
+        <activity android:name=".VideoPlaybackActivity" />
+    </application>
+</manifest>

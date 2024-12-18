@@ -1,0 +1,23 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progress_bar1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:max="5"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+
+    <Button
+        android:id="@+id/drink_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink Water"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
